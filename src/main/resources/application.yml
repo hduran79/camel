@@ -1,0 +1,12 @@
+server:
+  port: ${APPLICATION_PORT}
+
+logging:
+  level:
+    org:
+      springframework: ${LOG_LEVEL_APP}
+
+camel:
+  servlet:
+    mapping:
+      context-path: /${CONTEXT_PATH}
