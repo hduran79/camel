@@ -1,13 +1,13 @@
-package votre.com.co.apache_camel;
+package co.com.votre.camel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApacheCamelApplication {
+public class CamelApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApacheCamelApplication.class, args);
+		SpringApplication.run(CamelApplication.class, args);
 	}
 
 }

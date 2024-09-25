@@ -1,10 +1,10 @@
-package votre.com.co.apache_camel;
+package co.com.votre.camel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApacheCamelApplicationTests {
+class CamelApplicationTests {
 
 	@Test
 	void contextLoads() {

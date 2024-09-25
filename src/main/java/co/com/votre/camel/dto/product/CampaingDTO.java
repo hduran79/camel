@@ -1,4 +1,4 @@
-package votre.com.co.apache_camel.route;
+package co.com.votre.camel.dto.product;
 
 import java.io.Serializable;
 
@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseType implements Serializable {
+public class CampaingDTO implements Serializable {
 
-    private String name;
-    private String message;
+    private String company;
+    private String media;
 }

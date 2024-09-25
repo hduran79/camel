@@ -11,22 +11,23 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>votre.com.co</groupId>
-	<artifactId>apache-camel</artifactId>
+	<groupId>co.com.votre</groupId>
+	<artifactId>camel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>apache-camel</name>
 	<description>Demo project for Spring Boot</description>
-	
+
 	<properties>
 		<java.version>21</java.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<camel.version>4.8.0</camel.version>
+		<jt400.version>20.0.7</jt400.version>
 	</properties>
-	
+
 	<dependencies>
-		
+
 		<!-- Spring Boot dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -51,7 +52,7 @@
 			<groupId>org.apache.camel.springboot</groupId>
 			<artifactId>camel-spring-boot-starter</artifactId>
 			<version>${camel.version}</version>
-		</dependency>
+		</dependency> 
 		<dependency>
 			<groupId>org.apache.camel.springboot</groupId>
 			<artifactId>camel-servlet-starter</artifactId>
@@ -62,11 +63,29 @@
 			<artifactId>camel-jackson-starter</artifactId>
 			<version>${camel.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-mybatis</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
 
+		<!-- Mybatis dependencies -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+		
 		<!-- Util dependencies -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.jt400</groupId>
+			<artifactId>jt400</artifactId>
+			<version>${jt400.version}</version>
 		</dependency>
 
 	</dependencies>

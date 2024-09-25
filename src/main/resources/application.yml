@@ -6,7 +6,20 @@ logging:
     org:
       springframework: ${LOG_LEVEL_APP}
 
+# APACHE CAMEL
 camel:
   servlet:
     mapping:
       context-path: /${CONTEXT_PATH}
+
+# MYBATIS
+spring:
+  datasource:
+    votre:
+      url: jdbc:as400://votredlo.leonisa.com/BDVOTRE;prompt=false;password=modulo06;user=GNPROYPOLD;
+      driverClassName: com.ibm.as400.access.AS400JDBCDriver
+      libraries: VTPOLP00
+      hikari:
+        connectionTimeout: 30000 
+        idleTimeout: 600000
+        maxLifetime: 1800000
